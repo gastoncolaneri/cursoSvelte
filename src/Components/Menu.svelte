@@ -18,9 +18,9 @@
   };
 </script>
 
-<nav class="blue">
+<nav class="blue pl10 pr10">
   <div class="nav-wrapper">
-    <a href="/Inicio" use:link class="brand logo"> CRUD Svelte-PHP</a>
+    <a href="/Inicio" use:link class="brand logo"> Svelte-PHP</a>
     {#if $token === 1}
       <ul class="hide-on-med-and-down right">
         <li><a href="/Inicio" use:link>Inicio</a></li>
@@ -30,3 +30,12 @@
     {/if}
   </div>
 </nav>
+
+<style>
+  .pl10 {
+    padding-left: 20px;
+  }
+  .pr10 {
+    padding-right: 20px;
+  }
+</style>
